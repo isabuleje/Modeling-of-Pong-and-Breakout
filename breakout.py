@@ -13,10 +13,10 @@ class Breakout:
         self.lives = Life(3)  
         self.score = Score(0)  
 
-        self.titles = Titles(50, 20, 0, 0, "blue", 10, 5, None)
-        self.titles = Titles(50, 20, 10, 10, "red", 10, 5, None)
-        self.titles = Titles(50, 20, 20, 20, "green", 10, 5, None)
-        self.titles = Titles(50, 20, 30, 30, "yellow", 10, 5, None)
+        self.titles = Titles(50, 20, 0, 0, (0,0,255), 10, 5, None) #blue
+        self.titles = Titles(50, 20, 10, 10, (255,0,0), 10, 5, None) #red
+        self.titles = Titles(50, 20, 20, 20, (0,128,0), 10, 5, None) #green
+        self.titles = Titles(50, 20, 30, 30, (255,255,0), 10, 5, None) #yellow
 
         self.running = True
         self.start_screen_active = True
@@ -41,9 +41,12 @@ class Breakout:
         self.titles.draw_bricks()
         
     def check_events(self):
+        pass
 
 
     def update_events(self):
+        pass
         
         
-    def start_screen(self,bool):
+    def start_screen(self):
+        pass
