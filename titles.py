@@ -10,3 +10,13 @@ class Titles:
         self.rect = rect
 
     def draw_bricks(self):
+        
+        
+    def destroy_bricks(self):
+        
+        
+    def undestroy_bricks(self):
+        
+        
+    def check_collision(self,rect):
+        

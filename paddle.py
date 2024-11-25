@@ -17,3 +17,6 @@ class Paddle():
         
 
     def resize_paddle(self):
+        
+        
+    def draw_paddle(self):

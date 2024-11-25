@@ -23,3 +23,6 @@ class Balls:
 
 
     def collide_brick(self, isRound):
+        
+        
+    def draw_ball(self):

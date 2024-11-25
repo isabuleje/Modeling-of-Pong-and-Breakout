@@ -6,3 +6,6 @@ class Life:
 
 
     def lose_life(self):
+        
+        
+    def reset_life(self):
