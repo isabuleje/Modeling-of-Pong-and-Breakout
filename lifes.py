@@ -1,7 +1,7 @@
 class Life:
     def __init__(self, life):
         self.life = life
-        self.full_life = 100
+        self.full_life = self.life
 
     def show_life(self):
         print("Vida: ",self.life)
