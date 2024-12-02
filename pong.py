@@ -3,35 +3,6 @@ from ball import Balls
 from lifes import Life
 from score import Score
 from screen import Screen
-
-class Pong:
-    def __init__(self):
-        
-        
-    def game_startup(self):
-           
-        
-    def run_game(self):
-
-        
-    def draw(self):
-        
-        
-    def check_events(self):
-
-
-    def update_events(self):
-        
-        
-    def start_screen(self,bool):
-        
-        
-        
-from paddle import Paddle
-from ball import Balls
-from lifes import Life
-from score import Score
-from screen import Screen
 from titles import Titles
 
 class Breakout:
@@ -61,6 +32,8 @@ class Breakout:
         while self.running == True:
             self.check_events()
             self.draw()
+            self.update_events()
+            self.start_screen()
         
     def draw(self):
         self.paddle.draw_paddle(self.screen)  
@@ -76,3 +49,4 @@ class Breakout:
         
         
     def start_screen(self,bool):
+        print("A tela foi inicializada")

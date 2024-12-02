@@ -10,12 +10,15 @@ class Titles:
         self.rect = rect
 
     def draw_bricks(self):
+        print(f"Foram desenhados {self.rows} colunas com {self.rect} tilojos em cada um")
         
         
     def destroy_bricks(self):
-        
+        self.rect = None
+        print("Todos os tijolos foram destruidos")
         
     def undestroy_bricks(self):
+        print("Todos os tijolos foram restaurados")
         
         
     def check_collision(self,rect):
