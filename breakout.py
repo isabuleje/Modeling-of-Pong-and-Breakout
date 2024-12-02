@@ -7,7 +7,7 @@ from titles import Titles
 
 class Breakout:
     def __init__(self):
-        self.screen = Screen(800, 600, 200, 100)
+        self.screen = Screen()
         self.paddle = Paddle(400, 550, 100, 10, 0, None)  
         self.ball = Balls(50, 100, 0, 0, 0, (255,255,255))  
         self.lives = Life(3)  
@@ -39,6 +39,7 @@ class Breakout:
         self.lives.show_life(self.screen)  
         self.score.show_score(self.screen)  
         self.titles.draw_bricks()
+        self.screen.create_edges
         
     def check_events(self):
         pass
